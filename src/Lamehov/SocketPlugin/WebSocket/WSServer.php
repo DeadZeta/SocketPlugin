@@ -8,19 +8,19 @@ use raklib\utils\InternetAddress;
 
 class WSServer {
 
-    /** @var Socket */
+    	/** @var Socket */
 	public $socket;
 
-    /** @var Socket */
+    	/** @var Task */
 	public $WSListen;
 
-    /** @var Plugin */
+    	/** @var Plugin */
 	public $plugin;
 
-    /** @var array */
+    	/** @var array */
 	public $connections;
 
-    /** @var InternetAddress */
+    	/** @var InternetAddress */
 	public $bindAddress;
 
 	public function startSocket(Plugin $plugin, int $port = 8000) {
