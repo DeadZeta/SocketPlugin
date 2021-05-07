@@ -6,7 +6,11 @@ use pocketmine\scheduler\Task;
 use Lamehov\SocketPlugin\WebSocket\WSServer;
 
 class WSListen extends Task {
+
+    /** @var Plugin */
 	protected $plugin;
+
+    /** @var WSServer */
 	protected $socket;
 
 	public function __construct($plugin, $socket) {
