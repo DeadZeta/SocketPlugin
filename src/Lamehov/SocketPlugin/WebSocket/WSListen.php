@@ -7,10 +7,10 @@ use Lamehov\SocketPlugin\WebSocket\WSServer;
 
 class WSListen extends Task {
 
-    /** @var Plugin */
+    	/** @var Plugin */
 	protected $plugin;
 
-    /** @var WSServer */
+    	/** @var WSServer */
 	protected $socket;
 
 	public function __construct($plugin, $socket) {
